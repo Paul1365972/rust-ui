@@ -14,7 +14,7 @@ readme = "./README.md"
 
 [dependencies]
 leptos = { version = "0.8", features = ["nightly"], optional = true }
-dioxus = { version = "0.7", optional = true }
+dioxus = { version = "0.7", optional = true, default-features = false, features = ["macro", "html", "hooks", "signals"] }
 strum = { version = "0.28", features = ["derive"] }
 tw_merge = "0.1" 
 
